@@ -8,5 +8,8 @@ final appRouter = GoRouter(
       path: '/',
       builder: (context, state) => const HomeScreen(),
     ),
+    GoRoute(
+        path: '/state-provider',
+        builder: (context, state) => const StateProviderScreen())
   ],
 );
