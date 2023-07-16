@@ -23,9 +23,15 @@ class _HomeScreenView extends StatelessWidget {
     return ListView(
       children: const [
         _CustomListTile(
-            title: 'State Provider',
-            subTitle: 'Um estado simples',
-            location: '/state-provider')
+          title: 'State Provider',
+          subTitle: 'Um estado simples + AutoDispose',
+          location: '/state-provider',
+        ),
+        _CustomListTile(
+          title: 'Future Provider',
+          subTitle: 'Um simles future + Family',
+          location: '/future-provider',
+        ),
       ],
     );
   }
