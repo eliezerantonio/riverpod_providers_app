@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:riverpod_providers_app/presentation/screens/04-state-notifier-provider/todos_screen.dart';
 import 'package:riverpod_providers_app/presentation/screens/screens.dart';
 
 final appRouter = GoRouter(
@@ -19,6 +20,10 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/stream-provider',
       builder: (context, state) => const StreamScreen(),
+    ),
+    GoRoute(
+      path: '/state-notifier-provider',
+      builder: (context, state) => const TodosScreen(),
     )
   ],
 );
