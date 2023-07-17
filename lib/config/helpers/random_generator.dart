@@ -6,4 +6,10 @@ class RandomGenerator {
 
     return randomNames.fullName();
   }
+
+  static Stream<String> randomNamesStream() {
+    return Stream.periodic(const Duration(seconds: 2), (i) {
+      return getRandomName();
+    });
+  }
 }

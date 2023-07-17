@@ -32,6 +32,11 @@ class _HomeScreenView extends StatelessWidget {
           subTitle: 'Um simles future + Family',
           location: '/future-provider',
         ),
+        _CustomListTile(
+          title: 'Stream Provider',
+          subTitle: 'Um simles Stream',
+          location: '/stream-provider',
+        ),
       ],
     );
   }

@@ -7,7 +7,7 @@ class PokemonService {
     final dio = Dio();
     try {
       final response =
-          await dio.get('your_pokeapi_key');
+          await dio.get('https://pokeapi.co/api/v2/pokemon/$pokemonId');
 
       return response.data['name'] ?? 'Name not found';
     } catch (e) {
